@@ -1,6 +1,6 @@
-#This code kills a process with the file provided killmenow
+# This code kills a process with the file provided killmenow
 exec { 'killmenow':
-    commmand    =>     '/user/bin/pkill killmenow',
-    provider    =>     'shell',
-    returns     =>     [0, 1],
+  command  => '/usr/bin/pkill killmenow',
+  provider => 'shell',
+  returns  => [0, 1],
 }
